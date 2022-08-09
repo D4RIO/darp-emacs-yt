@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: Crear una función
+# key: func.
+# --
+/******************************************************
+ * $2${2:$(make-string (- 50 (string-width yas-text)) ?\ )} *
+ ******************************************************/
+${1:tipo}
+${2:nombre} (${3:params})
+{
+  ${1:$(darp--get-c-var-declaration yas-text)}
+  $0
+  ${1:$(darp--get-c-return-statement yas-text)}
+}
