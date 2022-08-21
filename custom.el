@@ -13,7 +13,8 @@
  '(package-archives
    '(("gnu" . "https://elpa.gnu.org/packages/")
      ("melpa" . "https://melpa.org/packages/")))
- '(package-selected-packages '(company yasnippet helm))
+ '(package-selected-packages
+   '(multiple-cursors undo-tree use-package company yasnippet helm))
  '(scroll-bar-mode nil)
  '(show-paren-mode t)
  '(tool-bar-mode nil)
